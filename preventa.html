@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREVENTA OFICIAL</title>
+    <link rel="stylesheet" href="estillos_cine.css">
+</head>
+<body>
+
+    <div class = "seccion_preventa">
+    <h1>---- CARTELERA INVERNAL ----</h1>
+
+    <p> ¡Proximos estrenos para el mes de JUNIO! </p>
+
+    <br>
+    
+    <section class = "cartelera">
+        <article class = "pelicula">
+            <h2>El Asombroso Circo Digital: El Último Acto</h2>
+            <img src="Poster_TADC.jpg" width="400">
+            <h3> TRAILER: </h3>
+            <video src="YTDown_YouTube_DIGITAL-CIRCUS-EL-ULTIMO-ACTO-TRAILER_Media_5-RnPJ2QiEw_001_1080p.mp4" width = "600" height = "400"  controls></video>
+        </article>
+
+        <article class = "pelicula">
+            <h2>Backrooms</h2>
+            <img src = "Poster_BACKROOMS.webp" width="400">
+            <h3> TRAILER: </h3>
+            <video src="YTDown_YouTube_Media_B3aL5JyR0ys_001_720p.mp4" width="600" height="400"  controls></video>
+        </article>
+
+        <article class = "pelicula">
+            <h2>Día de la Revelación</h2>
+            <img src = "Poster_Día-de-la-Revelación.jpg" width="400">
+            <h3> TRAILER: </h3>
+            <video src="YTDown_YouTube_EL-DIA-DE-LA-REVELACION-Trailer-Oficial-_Media_-XXZgYygh40_001_1080p.mp4 "width="600" height="400" controls></video>
+        </article>
+    
+    </section>
+    <br>
+    <div class = "formulario_tickets">
+        <h2> - BOLETERIA - </h2>
+        <form action = "resumen.html">
+        <p> Seleccione la pelicula: </p>
+        <select name = "pelicula" id = "tipo">
+            <option value = "nada"></option>
+            <option value = "circo_digital">El Asombroso Circo Digital: El Último Acto</option>
+            <option value = "backrooms">Backrooms</option>
+            <option value = "dia-de-la-revelacion">Día de la Revelación</option>
+        </select>
+
+        <br>
+        <br>
+
+        <p> Seleccione su tipo de ticket: </p>
+        <p><input type = "radio" id = "basico" name = "ticket" value = "2000">
+        <label for="basico"> BASICO (2D) - $2000 </label>
+        </p>
+
+        <p><input type = "radio" id = "estandar" name = "ticket" value = "3500">
+        <label for="estandar"> ESTANDAR (3D) - $3500 </label>
+        </p>
+
+        <p><input type = "radio" id = "premium" name = "ticket" value = "4000">
+        <label for="premium"> PREMIUM (4D) - $4000 </label>
+        </p>
+        <br>
+
+        <button type = "submit"> CONTINUAR </button>
+        </form>
+        </div>
+    </div>
+
+</body>
+</html>

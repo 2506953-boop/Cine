@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Compra</title>
+    <link rel = "stylesheet" href="estillos_cine.css">
+    <script src="codigo-base.js"></script>
+</head>
+<body>
+    <div class="seccion_preventa">
+        <h1>----- TU TICKET DIGITAL -----</h1>
+        <div class="formulario_tickets">
+            <h2> *CONFIMACIÓN FINAL* </h2>
+            <p>Cantidad de Entradas: 
+                <input type = "number" id = "cantidad" placeholder="0" min="1">
+            </p>
+
+            <p> Seleccione el precio del ticket elegido: </p>
+            <select id="precio_ticket">
+                <option value = "2000">Básico (2D)</option>
+                <option value = "3500">Estandar (3D)</option>
+                <option value = "4000">Premium (4D)</option>
+            </select>
+            <br>
+            <p>¿Desea sumar extras?</p>
+            <p>
+                <input type="checkbox" id="extra-posters">
+                <label for = "extra-posters"> COMBO POSTERS (+$500)</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="extra-pochoclos">
+                <label for = "extra-pochoclos"> COMBO POCHOCLOS (+$1000)</label>
+            </p>
+            <br>
+            <button onclick="calcular()">CALCULAR</button>
+            <button onclick="limpiar()">LIMPIAR</button>
+            <hr>
+            <p id="resultado2" style="font-size: 35px; color: rgb(0, 255, 213);"></p>
+        </div>
+
+        <br>
+        <a href="cartelera_semanal.html"><button>VOLVER AL INICIO</button></a>
+    </div>
+</body>
+</html>
