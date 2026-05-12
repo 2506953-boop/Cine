@@ -1,3 +1,14 @@
+function validad(){
+    var usu=parseInt(document.getElementById("usuario").value);
+    var password=parseInt(document.getElementById("password").value);
+
+    if(usu == "AngelesR" && password == "1234"){
+        alert("Acceso permitido!");
+        window.location.href = "preventa.html";
+    }else{
+        alert("Acceso denegado!!");
+    }
+    }
 function calcular(){
     var cant=parseInt(document.getElementById("cantidad").value);
     var precio=parseInt(document.getElementById("precio_ticket").value);
