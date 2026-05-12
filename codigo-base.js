@@ -1,9 +1,9 @@
-function validad(){
-    var usu=parseInt(document.getElementById("usuario").value);
-    var password=parseInt(document.getElementById("password").value);
+function validar(){
+    var usu=document.getElementById("usuario").value;
+    var password=document.getElementById("password").value;
 
     if(usu == "AngelesR" && password == "1234"){
-        alert("Acceso permitido!");
+        alert("Acceso permitido!. Bienvenido " + usu);
         window.location.href = "preventa.html";
     }else{
         alert("Acceso denegado!!");
